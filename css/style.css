@@ -646,6 +646,136 @@ overflow: hidden;
     }
 }
 
+/*  Login & Reqister Styles  */
+
+.login_section {
+   background-color: #E4E9E7;
+   
+}
+
+.login_container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 92vh;
+}
+
+.login_title {
+    text-align: center;
+    color: #016e83;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+.login_body {
+    margin: 10px auto 40px;
+    padding: 10px 10px 10px;
+    position: relative;
+    max-width: 400px;
+    width: 95%;
+   background-color: #534741;
+    border-radius: 9px;
+}
+
+.login_mistake {
+    width: 70%;
+/*    position: absolute;*/
+    top -50px;
+/*    left: -20px;*/
+    border: 1px solid white;
+    padding: 5px;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+/*    display: none;*/
+    opacity: 0;
+}
+
+.user_reqister_label {
+    color: white;
+    padding: 0px 33px;
+}
+
+.user_reqister_label::after {
+    content: "*";
+    color: white;
+    padding: 0px 2px;
+    vertical-align:top;
+/*    vertical-align: super;*/
+}
+
+.login_email {
+    display: block;
+    width: 85%;
+    margin: 1px auto 15px;
+    padding: 15px 10px;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    color: #777;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 4px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.login_email::placeholder {
+    color: #cbcbcb;
+}
+
+.login_psw_lost {
+    display: block;
+    margin: -12px 30px 20px 0px;
+    text-align: right;
+    color: white;
+   text-decoration: underline;
+}
+
+.login_new_user {
+    display: block;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.login_new_user span {
+    color: yellow;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.number_check_btn {
+    display: block;
+    padding: 11px 25px;
+    background-color: orange;
+    border: 1px solid #ffd102;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 7px;
+    font-size: 16px;
+    outline: none;
+   cursor: pointer;
+   transition: all 0.2s ease 0s;
+}
+
+.number_check_btn:hover {
+   background-color: #ed9900;
+} 
+
+
 /*  Footer Styles */
 
 .footer {
@@ -659,8 +789,7 @@ overflow: hidden;
 }
 
 
-.footer__bottom__container {
-   
+.footer__bottom__container { 
     }
 
 .footer_divider {
