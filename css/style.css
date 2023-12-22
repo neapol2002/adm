@@ -651,6 +651,7 @@ overflow: hidden;
 .footer {
    margin-top: auto;
    background-color: #534741;
+/*   border-top: 7px solid orange;*/
 }
 
 .footer__bottom {
@@ -659,10 +660,23 @@ overflow: hidden;
 
 
 .footer__bottom__container {
-    display: flex;
+   
+    }
+
+.footer_divider {
+   border-top: 5px solid orange;
+   margin: 0px auto;
+   width: 90%;
+   height: 5px;
+   padding: 10px 0px 0px;
+   border-radius: 50%;
+}
+
+.footer__bottom-inner {
+   display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 
 .footer__bottom__container a {
    color: white;
