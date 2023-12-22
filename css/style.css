@@ -170,7 +170,11 @@ legend {
   color: grey;
 }
 
-
+@media (max-width: 400px) {
+   .header__search {
+      display: none;
+   }
+}
 
 /*  burger menyu styles   */
 
@@ -372,18 +376,26 @@ f
    flex: 1 1 auto;
 }
 .section_right-content {
+   padding: 20px 20px;
+}
+
+@media (max-width: 650px) {
+   .section_right-content {
+   padding: 10px 5px;
+}
 }
 
 /*Cardboxes section styles*/
 
 .card_boxes-section {
-   margin: 20px 20px;
+   
 }
 
 .main_section-title {
    font-size: 38px;
    font-weight: 700;
-   margin: 40px 20px 10px;
+   margin: 20px 0px 10px;
+   padding: 0px 20px;
 }
 .title_section-divider {
    width: 20%;
@@ -393,24 +405,28 @@ f
 }
 
 .card_boxes-rows {
-   padding: 20px;
+   padding: 0px 20px;
    display: flex;
    flex-wrap: wrap;
 }
 .card_box-main {
    flex: 0 0 25%;
    padding: 10px;
+   min-width: 250px;
 }
 .box_inner {
    padding: 30px;
-  display: flex;
-  justify-content: space-between;
+/*  display: flex;*/
+/*  justify-content: space-between;*/
   border-radius: 20px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   cursor: pointer;
    background-color: white;
 }
-.box-right_side {
+.box-top_side {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 .box_numbers {
    font-size: 28px;
@@ -419,6 +435,8 @@ f
 .box_topic {
    font-size: 20px;
    white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
 }
 
 .card_box-icon {
@@ -426,14 +444,57 @@ f
    color: blueviolet;
 }
 
+@media (max-width: 850px) {
+   .card_box-main {
+      flex: 0 0 50%;
+   }
+}
+
+@media (max-width: 650px) {
+   .card_boxes-rows {
+   padding: 0px 10px;
+}
+   
+   .main_section-title {
+      font-size: 32px;
+   }
+}
+
+@media (max-width: 550px) {
+   .card_box-main {
+      min-width: 100px;
+      padding: 5px;
+   }
+}
+
+@media (max-width: 550px) {
+   .card_boxes-rows {
+   padding: 0px 0px;
+}
+   .box_inner {
+      padding: 15px;
+   }
+   .box_numbers {
+      font-size: 20px;
+   }
+   .card_box-icon {
+      font-size: 30px;
+   }
+   .box_topic {
+      font-size: 16px;
+   }
+}
+
 /* Latest messages section style*/
 
 .section_latest-messages {
-   margin: 20px 20px;
+   margin: 20px 0px;
+      overflow: hidden;
 }
 
 .latest-messages-main {
-   margin: 20px 20px;
+   margin: 20px 0px;
+   padding: 0px 20px;
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
@@ -444,26 +505,27 @@ f
 
 
 .latest_uploads {
-  flex: 1 1 65%;
+  flex: 0 1 65%;
    padding: 7px;
+   background-color: white;
+  border-radius: 20px;
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+   margin-bottom: 20px;
 }
 
 .latest_uploads-main {
-   padding: 20px;
- background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-  overflow-y: auto;
-  white-space: nowrap;
-   margin-bottom: 20px;
+   padding: 20px;  
 }
 
 
 
 .uploads_table {
+/*   display: block;*/
   width: 100%;
   margin-top: 10px;
   border-collapse: collapse;
+   overflow-x: auto;
+   white-space: nowrap;
 }
 
 .uploads_table-title h2 {
@@ -530,23 +592,87 @@ f
    color: white;
 }
 
+@media (max-width: 1350px) {
+   .latest-messages-main {
+      display: block;
+   }
+   .latest_uploads {
+      flex: 0 1 99%;
+   }
+}
+
+
+@media (max-width: 650px) {
+   
+   
+   .latest_uploads {
+      flex: 0 1 90%;
+   }
+}
+
+@media (max-width: 550px) {
+      .latest_uploads-main {
+      max-width: 420px;
+      overflow-x: scroll;
+   }
+   
+}
+
+@media (max-width: 500px) {
+   
+   .latest-messages-main {
+      padding: 0px 10px;
+   }
+      .latest_uploads-main {
+      width: 330px;
+   }
+   
+}
+
+@media (max-width: 400px) {
+   
+      .latest_uploads-main {
+      width: 250px;
+   }
+   
+}
+
+
 /*latest inbox styles*/
 
 
 .latest_inbox {
-     flex: 0 0 35%;
+   flex: 0 1 34%;
    padding: 7px;
+    background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+   margin-bottom: 20px;
 }
 
 .latest_inbox-main {
    padding: 20px;
- background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-  overflow-y: auto;
-  white-space: nowrap;
-   margin-bottom: 20px;
-  
+}
+
+@media (max-width: 1350px) {
+   .latest_inbox {
+      flex: 0 1 50%;
+   }
+}
+
+@media (max-width: 450px) {
+      .latest_inbox-main {
+      max-width: 300px;
+      overflow-x: scroll;
+   }
+   
+}
+
+@media (max-width: 360px) {
+      .latest_inbox-main {
+      max-width: 250px;
+   }
+   
 }
 
 /*Nav bar styles mobile*/
