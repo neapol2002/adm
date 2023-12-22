@@ -646,4 +646,34 @@ overflow: hidden;
     }
 }
 
+/*  Footer Styles */
+
+.footer {
+   margin-top: auto;
+   background-color: #534741;
+}
+
+.footer__bottom {
+    padding: 15px 0;
+}
+
+
+.footer__bottom__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.footer__bottom__container a {
+   color: white;
+   font-weight: 700;
+}
+
+.footer__bottom__copy {
+   line-height: 170%;
+   text-align: center;
+   color: darkgrey;
+}
+
+
 
