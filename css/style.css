@@ -157,6 +157,11 @@ legend {
   border-radius: 10px;
    padding: 5px 10px;
    align-items: center;
+   transition: all 0.3s ease 0s;
+}
+
+.header__search:hover {
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.19);
 }
 
 .header__input {
@@ -511,7 +516,7 @@ overflow: hidden;
 }
 
 .table_container {
-   max-width: 900px;
+   max-width: 1300px;
    margin: 0 auto;
 }
 
@@ -772,6 +777,118 @@ overflow: hidden;
 } 
 
 
+/*users table page sty/les*/
+
+.users_table-section {
+   margin: 20px 0px;
+   padding: 0px 20px;
+}
+
+.users_table-body {
+   background-color: white;
+  border-radius: 20px;
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+   margin: 20px 0px;
+   
+}
+
+.users_table-main {
+   padding: 20px;
+}
+
+@media (max-width: 600px) {
+   .users_table-section {
+   margin: 20px 0px;
+   padding: 0px 10px;
+}
+}
+
+/*Section Settings Styles */
+
+.section_settings {
+}
+.section_settings-body {
+   margin: 20px 0px;
+   padding: 0px 20px;
+}
+.section_settings-main {
+   display: flex;
+   border-top: 1px dashed grey;
+   border-bottom: 1px dashed grey;
+   padding: 10px 15px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.section_settings-left {
+}
+.section_settings_select {
+   padding: 0px 2px;
+}
+.select__filtr {
+   font-size: 14px;
+   padding: 10px 10px;
+   border-radius: 7px;
+   color: dimgray;
+}
+
+.section_settings-right {
+   display: flex;
+}
+
+@media (max-width: 600px) {
+   .section_settings-body {
+   padding: 0px 10px;
+}
+   
+   .section_settings-main {
+   padding: 10px 0px;
+}
+}
+
+/* Buttons Styles */
+
+.button_part {
+   padding: 0px 0px 0px 10px;
+}
+
+.btn_body {
+   display: flex;
+  padding: 7px 15px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  color: black;
+  border-radius: 10px;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   cursor: pointer;
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.19);
+   
+}
+
+.btn_title {
+   padding-left: 5px;
+   white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+
+.button_icon {
+   color: inherit;
+   font-size: 24px;
+}
+
+.btn-blue {
+   background: #08aacb;
+   transition: all 0.3s ease 0s;
+}
+
+.btn-blue:hover {
+   background: #00809a;
+}
+
 /*  Footer Styles */
 
 .footer {
@@ -783,7 +900,6 @@ overflow: hidden;
 .footer__bottom {
     padding: 15px 0;
 }
-
 
 .footer__bottom__container { 
     }
@@ -813,6 +929,8 @@ overflow: hidden;
    text-align: center;
    color: darkgrey;
 }
+
+
 
 
 
