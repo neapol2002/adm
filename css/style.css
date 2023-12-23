@@ -248,6 +248,7 @@ f
 
 .main-section {
    background-color: #534741;
+   flex: 1 0 auto;
 }
 .main-section_container {
    display: flex;
@@ -655,6 +656,7 @@ overflow: hidden;
 
 .login_section {
    background-color: #E4E9E7;
+   flex: 1 0 auto;
    
 }
 
@@ -674,7 +676,7 @@ overflow: hidden;
 }
 
 .login_body {
-    margin: 10px auto 215px;
+    margin: 10px auto 100px;
     padding: 10px 10px 10px;
     position: relative;
     max-width: 400px;
@@ -830,6 +832,7 @@ overflow: hidden;
    padding: 10px 10px;
    border-radius: 7px;
    color: dimgray;
+   outline: none;
 }
 
 .section_settings-right {
@@ -887,6 +890,46 @@ overflow: hidden;
 
 .btn-blue:hover {
    background: #00809a;
+}
+
+/*  Paginations Styles */
+
+.pagination {
+    text-align: center;
+   margin-bottom: 20px;
+}
+
+.pagination_item {
+    text-align: center;
+    margin: 2px 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: darkgrey;
+    padding: 2px 5px;
+}
+
+.page_active {
+    color: white;
+    border: 1px solid orangered;
+    background-color: orangered;
+   border-radius: 5px;
+}
+
+.page_pointer {
+    color: orangered;
+    margin: 2px 5px;
+    font-weight: 700;
+}
+
+.pagination_item:hover {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+
+.page_active:hover {
+    color: white;
+
 }
 
 /*  Footer Styles */
