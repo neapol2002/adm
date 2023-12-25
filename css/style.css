@@ -366,10 +366,6 @@ f
    padding-right: 5px;
 }
 
-.bx-intersect {
-}
-.bx-line-chart {
-}
 
 /*Main Section right*/
 
@@ -568,6 +564,23 @@ overflow: hidden;
 
 .uploads_table tbody tr td:nth-child(2) {
   padding-left: 10px;
+}
+
+.user_q {
+   padding: 2px 5px;
+   background-color: yellow;
+   margin: 0px 3px;
+   border-radius: 10px;
+   font-weight: 700;
+}
+
+.edit_times {
+   padding: 2px 5px;
+   background-color: #ff106c;
+   margin: 0px 3px;
+   border-radius: 10px;
+   font-weight: 700;
+   color: white;
 }
 
 /*Table badge styles*/
@@ -797,6 +810,8 @@ overflow: hidden;
 .users_table-main {
    padding: 20px;
 }
+
+
 
 @media (max-width: 600px) {
    .users_table-section {
