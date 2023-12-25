@@ -552,7 +552,7 @@ overflow: hidden;
 }
 
 .uploads_table tr td {
-  padding: 16px 10px;
+  padding: 10px 10px;
 }
 
 .uploads_table tbody tr td {
@@ -563,7 +563,27 @@ overflow: hidden;
 }
 
 .uploads_table tbody tr td:nth-child(2) {
-  padding-left: 10px;
+  padding-left: 5px;
+}
+
+.cell1_size {
+   max-width: 120px;
+   white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+
+.img_table_container {
+   width: 70px;
+   display: block;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.img_table_mini {
+   width: 100%;
+   object-fit: cover;
+   
 }
 
 .user_q {
@@ -582,6 +602,8 @@ overflow: hidden;
    font-weight: 700;
    color: white;
 }
+
+
 
 /*Table badge styles*/
 
@@ -607,6 +629,11 @@ overflow: hidden;
 }
 .bg_seccuss{
   background: #0f9859;
+   color: white;
+}
+
+.bg_premium {
+   background: #ab0cb9;
    color: white;
 }
 
@@ -872,7 +899,7 @@ overflow: hidden;
 
 .btn_body {
    display: flex;
-  padding: 7px 15px;
+  padding: 7px 12px;
   font-size: 15px;
   font-weight: 700;
   line-height: 1;
