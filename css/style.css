@@ -608,6 +608,43 @@ overflow: hidden;
 }
 
 
+.model_q {
+   padding: 2px 5px;
+   background-color: #004eff;
+   margin: 0px 3px;
+   border-radius: 10px;
+   font-weight: 700;
+   color: white;
+}
+
+.class_q {
+   padding: 2px 5px;
+   background-color: #ffc400;
+   margin: 0px 3px;
+   border-radius: 10px;
+   font-weight: 700;
+   color: white;
+}
+
+.label_btn {
+    display: flex;
+  padding: 7px 12px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  color: black;
+  border-radius: 10px;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   cursor: pointer;
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.19);
+}
+
+.add_logo-btn {
+   background-color: #00ba15;
+   max-width: 140px;
+}
 
 /*Table badge styles*/
 
