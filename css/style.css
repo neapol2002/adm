@@ -1019,6 +1019,51 @@ overflow: hidden;
    }
 }
 
+/* Users mail section*/
+
+.users_mail-section {
+}
+
+.users_table-body {
+   background-color: white;
+  border-radius: 20px;
+   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+   margin: 20px 0px;
+   max-width: 1150px;
+}
+
+.users_mail-about {
+  border-top: 1px dashed grey;
+   padding: 7px 5px;
+   border-bottom: 1px dashed grey;
+   padding: 7px 5px;
+   margin-bottom: 20px;
+}
+
+.mail-about {
+   font-size: 18px;
+   color: mediumblue;
+   font-weight: 700;
+   padding-right: 10px;
+}
+
+.mail-about-title {
+   font-size: 18px;
+}
+
+.users_mail-text {
+   border: 1px dotted grey;
+   border-radius: 10px;
+}
+
+.mail-text-body {
+   padding: 10px;
+   line-height: 1.8;
+   font-size: 16px;
+   font-weight: 300;
+   color: #6c6c6c;
+}
+
 
 /*  Paginations Styles */
 
